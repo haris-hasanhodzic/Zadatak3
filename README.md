@@ -9,3 +9,4 @@ ali zbog loše pročitanog 3 zadatka počeo ja sam počeo programirati u PHP-u.
 Nako što sam uočio grešku realizovao sam 3 zadatak i uz pomoć Javascript programskog jezika.
 
 Ovdje je postavljena php verzija aplikacije.
+Prije pokretanje aplikacije potrebno je pokrenuti createdatabase.php fajl kako bi se kreirala baza i tabela u bazi.
