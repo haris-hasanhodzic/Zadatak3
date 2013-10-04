@@ -3,7 +3,7 @@
     <head>
         <?php require "load_post.php";?>
         <?php require "load_db.php";?>
-        <link rel="stylesheet" type="text/css" href="/zadatak3/table.css" />
+        <link rel="stylesheet" type="text/css" href="/Zadatak3/table.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
     </head>
@@ -12,7 +12,7 @@
             <div class="table-div">
                 <div>
                     <h3>Users:</h3>
-                    <a href="/zadatak3/edit.php" class="primary">Add</a>
+                    <a href="/Zadatak3/edit.php" class="primary">Add</a>
                 </div>
                 <table class="table table-hower">
                     <thead>
@@ -28,7 +28,7 @@
                     <tbody>
                         <?php
                         if($page>1 && $total<=$offset)
-                            header( 'Location: /zadatak3/index.php?page=' . (int)$total/2 ) ;
+                            header( 'Location: /Zadatak3/index.php?page=' . (int)$total/$limit ) ;
                         
                         
                         while ($row = $result->fetchArray()) { 
@@ -45,7 +45,7 @@
                 </table>
                 <div class="pages">
                     <?php 
-                    $total/=2;
+                    $total/=$limit;
                     if ($total>1)
                     {
                         if($total!=(int)$total)
@@ -70,6 +70,6 @@
                 </form>
             </div>
         </div>
-        <script src="/zadatak3/app.js"></script>
+        <script src="/Zadatak3/app.js"></script>
     </body>
 </html>

@@ -3,7 +3,7 @@
     <head>
         <?php require "test_input.php";?>
         
-        <link rel="stylesheet" type="text/css" href="/zadatak3/table.css" />
+        <link rel="stylesheet" type="text/css" href="/Zadatak3/table.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
     </head>
@@ -53,7 +53,7 @@
                 </form>
             </div>
         </div>
-        <script src="/zadatak3/app.js"></script>
+        <script src="/Zadatak3/app.js"></script>
     </body>
 </html>
 

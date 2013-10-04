@@ -26,7 +26,7 @@ if (empty($fullnameErr) && empty($usernameErr) && empty($emailErr) && empty($pas
         $result = $statement->execute();
 
         if($result)
-            header( 'Location: /zadatak3/index.php' ) ;
+            header( 'Location: /Zadatak3/index.php' ) ;
     }
 }
 ?>

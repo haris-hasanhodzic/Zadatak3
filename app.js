@@ -13,25 +13,25 @@ function delete_person(event, id)
             }
         }
 
-        xmlhttp.open("POST", "/zadatak3/delete.php", true);
+        xmlhttp.open("POST", "/Zadatak3/delete.php", true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.send("id="+id);
     }
 }
 function edit_person(id)
 {
-    window.location.assign("/zadatak3/edit.php?id=" +id);
+    window.location.assign("/Zadatak3/edit.php?id=" +id);
 }
 function toIndex(e){
     e.preventDefault();
     e.stopPropagation();
-    window.location.assign("/zadatak3/index.php");
+    window.location.assign("/Zadatak3/index.php");
 }
 function to_page(id)
 {
     var form=document.getElementsByClassName("search")[0];
     form=form.getElementsByTagName("form")[0];
-    form.action="/zadatak3/index.php?page="+id;
+    form.action="/Zadatak3/index.php?page="+id;
     form.submit();
     
 }
